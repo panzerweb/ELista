@@ -18,7 +18,7 @@
         />
     </head>
 
-    <body>
+    <body onload="displayItems()">
         <header>
             <!-- place navbar here -->
         </header>
@@ -62,17 +62,21 @@
                         </div>
 
                         <div class="d-flex justify-content-center mx-auto">
-                            <button class="btn btn-primary" id="add_item">
+                            <button class="btn btn-primary" id="add_item" onclick="addItem()">
                                 Add Item
                             </button>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-5 px-4 py-4 my-5 shadow" id="parent-column">
+                    
+                    <div class="col-12 col-lg-5 px-4 py-4 my-5 shadow">
                         <h3>List</h3>
                         <p class="fw-semibold">Total Amount: 
                             <span class="fw-light">Php </span>
                             <span id="totalAmount" class="fw-light">000.00</span>
                         </p>
+                        <div class="" id="parent-column">
+                            
+                        </div>
                     </div>
                 </div>
             </div>
@@ -81,7 +85,7 @@
             <!-- place footer here -->
         </footer>
 
-        <script src="main.js"></script>
+        <script src="/js/main.js"></script>
         <!-- Bootstrap JavaScript Libraries -->
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
